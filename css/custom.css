@@ -35,7 +35,8 @@ text-align: right;
 
 
 /*Base styles*/
-
-.about-me-table
+footer{background-color: #191919; color:#fff;}
+p {margin:5px 0px;}
+#about-me-table {margin:0px;width: 100%;}
 
 

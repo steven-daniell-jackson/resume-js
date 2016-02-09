@@ -11,7 +11,9 @@
  	skype : "steven.jackson..",
  	contact_number : "+27 76 997 5180",
  	dateofbirth : "02/11/1988",
- 	nationality : "South African"
+ 	nationality : "South African",
+ 	personality_type : "INTJ",
+ 	home_language : "English"
  }
 
 // Debug
@@ -23,7 +25,8 @@ console.log(steven_jackson);
  *********************************************/
 
  var about_me = {
-
+objective: "To become extremely proficient in as many languages, platforms and frameworks as possible and work internationally. I will do anything to achieve these goals. \
+I have the capability of learning any language or framework.",
  	hobbies : ["Anime","Coding", "Gaming", "Researching"],
  	traits : ["Attention to detail","Numerical","Accurate","Structured","Quick Learner/Study","Smart Worker","Self-Disciplined","Document Orientated","Logical","Adaptive","Open minded"]
 
