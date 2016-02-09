@@ -47,8 +47,8 @@ console.log(about_me);
  	this.name = name;
  }
 
- var varistyCollege = ("Varsity College","Diploma","2008","Diploma in Information Technology (Software Development)");
- var northlinkCollege = ("Northlink College","Certificate","2005/2006","Matric");
+ var varistyCollege = new education ("Varsity College","Diploma","2008","Diploma in Information Technology (Software Development)");
+ var northlinkCollege = new education ("Northlink College","Certificate","2005/2006","Matric");
 
 
 /*********************************************
