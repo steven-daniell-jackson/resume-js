@@ -22,53 +22,69 @@ tbl.style.textAlign = "left";
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
 
+// About Me Heading
+var h4 = document.createElement("h4");
+h4.style.fontSize = "42px";
+var txt = document.createTextNode("About Me");
+h4.appendChild(txt)
+
+td.appendChild(h4);
+td.style.textAlign = "center";
+td.colSpan = 2;
+
+
 /*********************************************
 
- References
+ Summary
 
  *********************************************/
 
-// References Heading
-var ReferencesHeading = document.createElement("h4");
-ReferencesHeading.style.fontSize = "32px";
-var ReferencesHeadingtxt = document.createTextNode("Summary");
-ReferencesHeading.appendChild(ReferencesHeadingtxt)
+// Create row
+var tr = tbl.insertRow();
+var td = tr.insertCell(0);
 
-td.appendChild(ReferencesHeading);
+
+// Summary Heading
+var h4 = document.createElement("h4");
+h4.style.fontSize = "32px";
+var txt = document.createTextNode("Summary");
+h4.appendChild(txt)
+
+td.appendChild(h4);
 
 // Append elements to td
 
 
-// Objective text
+// Summary Name and Lastname
 var p = document.createElement("p");
-var objectivetxt = document.createTextNode("Name: " + steven_jackson.firstname + " " + steven_jackson.lastname);
-p.appendChild(objectivetxt)
+var txt = document.createTextNode("Name: " + steven_jackson.firstname + " " + steven_jackson.lastname);
+p.appendChild(txt)
+td.appendChild(p);
+ 
+// Summary Date of birth
+var p = document.createElement("p");
+var txt = document.createTextNode("Date of birth: " + steven_jackson.dateofbirth);
+p.appendChild(txt)
 td.appendChild(p);
 
-// Objective text
+// Summary nationality
 var p = document.createElement("p");
-var objectivetxt = document.createTextNode("Date of birth: " + steven_jackson.dateofbirth);
-p.appendChild(objectivetxt)
+var txt = document.createTextNode("Nationality: " + steven_jackson.nationality);
+p.appendChild(txt)
 td.appendChild(p);
 
-// Objective text
+// Summary home language
 var p = document.createElement("p");
-var objectivetxt = document.createTextNode("Nationality: " + steven_jackson.nationality);
-p.appendChild(objectivetxt)
+var txt = document.createTextNode("Home Language: " + steven_jackson.home_language);
+p.appendChild(txt)
 td.appendChild(p);
 
-// Objective text
-var p = document.createElement("p");
-var objectivetxt = document.createTextNode("Home Language: " + steven_jackson.home_language);
-p.appendChild(objectivetxt)
-td.appendChild(p);
-
-// Objective text
+// Summary personality type
 var a = document.createElement("a");
 a.href = "http://www.16personalities.com/intj-personality";
 a.target = "_blank";
-var objectivetxt = document.createTextNode("Personality type: " + steven_jackson.personality_type);
-a.appendChild(objectivetxt)
+var txt = document.createTextNode("Personality type: " + steven_jackson.personality_type);
+a.appendChild(txt)
 td.appendChild(a);
 
 // td styling
@@ -89,13 +105,13 @@ var td = tr.insertCell(0);
 // Objective Heading
 var h4 = document.createElement("h4");
 h4.style.fontSize = "32px";
-var objectiveHeading = document.createTextNode("Objective");
-h4.appendChild(objectiveHeading)
+var txt = document.createTextNode("Objective");
+h4.appendChild(txt)
 
 // Objective text
 var p = document.createElement("p");
-var objectivetxt = document.createTextNode(about_me.objective);
-p.appendChild(objectivetxt)
+var txt = document.createTextNode(about_me.objective);
+p.appendChild(txt)
 
 
 
@@ -122,8 +138,8 @@ a.style.border = '1px solid white';
 a.style.padding = "10px 20px";
 td.height = "100px";
 a.href = "#";
-var aboutMetxt = document.createTextNode("More about me");
-a.appendChild(aboutMetxt)
+var txt = document.createTextNode("More about me");
+a.appendChild(txt)
 
 // Append elements to td
 td.appendChild(a);
@@ -142,31 +158,51 @@ element.appendChild(tbl);
 
 function buildMoreAboutMe(){
 
+
 // Get targetted element
 var element = document.getElementById('more-about-me-table');
+
 
 // Create header table
 tbl  = document.createElement('table');
 tbl.style.width  = '100%';
 tbl.style.textAlign = "left";
 
+
+
 // Create row
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
+
+// More About me heading
+var h4 = document.createElement("h4");
+h4.style.fontSize = "42px";
+var txt = document.createTextNode("More About Me");
+h4.appendChild(txt)
+
+td.appendChild(h4);
+td.style.textAlign = "center";
+td.colSpan = 3;
+
 
 /*********************************************
 
 Education
 
  *********************************************/
+
+// Create row
+var tr = tbl.insertRow();
+var td = tr.insertCell(0);
+
 var td = tr.insertCell(0);
 
 
-// Objective Heading
+// Education Heading
 var h4 = document.createElement("h4");
 h4.style.fontSize = "32px";
-var objectiveHeading = document.createTextNode("Education");
-h4.appendChild(objectiveHeading)
+var txt = document.createTextNode("Education");
+h4.appendChild(txt)
 td.appendChild(h4);
 
 // Debug
