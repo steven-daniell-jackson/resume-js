@@ -7,7 +7,7 @@ Same naming convention as Bootstrap, since I am comfortable using it.
 
 ***************************/
 
-div.container {    
+.container {    
 	display: block;
     width: 75%;
     margin: 0 auto;
@@ -32,6 +32,7 @@ text-align: right;
 .pull-right {
 	float: right;
 }
+
 
 /*Base styles*/
 
