@@ -1,6 +1,4 @@
 
-
-
 // Build table function accepting Objects
 function buildTable(e) {
 
@@ -8,7 +6,7 @@ function buildTable(e) {
 console.log(e);
 
 // Get targetted element
-var element = document.getElementById('about-me-table');
+var element = document.getElementById('skills-matrix-table');
 
 //  Create table 
 tbl  = document.createElement('table');
@@ -58,7 +56,7 @@ if (i > 0) {
   td_heading.style.padding = "10px 20px";
   td_heading.style.fontWeight  = "700";
   td_heading.style.textAlign = "center";
-  
+
 }
 
 }

@@ -35,8 +35,12 @@ text-align: right;
 
 
 /*Base styles*/
-footer{background-color: #191919; color:#fff;}
+body{background-color: #000;}
+h1 {font-size: 40px; margin: 0px;}
 p {margin:5px 0px;}
-#about-me-table {margin:0px;width: 100%;}
+header {background-color: #fff; padding: 30px 0px;}
+footer{background-color: #191919; color:#fff;}
+
+#about-me-table {margin:0px;width: 100%; background-color: #fff;background-color: #191919; color: #fff; padding: 20px 0px;}
 
 

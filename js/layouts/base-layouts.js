@@ -61,6 +61,7 @@ td.appendChild(contactSkype);
 
 // td styling
 td.style.padding = "0px";
+td.style.verticalAlign = "bottom";
 td.style.textAlign = "left";
 
 
@@ -82,6 +83,7 @@ td.appendChild(heading);
 td.appendChild(subHeadingtxt);  
 td.style.padding = "5px 20px";
 td.style.textAlign = "left";
+td.style.verticalAlign = "top";
 
 // Profile Image
 var td = tr.insertCell(0);
@@ -92,6 +94,7 @@ profileImage.width = 200;
 td.appendChild(profileImage);
 td.style.padding = "5px 20px";
 td.style.textAlign = "center";
+
 
 // Write to Element
 element.appendChild(tbl);
