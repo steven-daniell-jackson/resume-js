@@ -3,15 +3,13 @@ function buildHeader(){
 // Get targetted element
 var element = document.getElementById('header');
 
-
-
+// Create header table
 tbl  = document.createElement('table');
 tbl.style.width  = '100%';
 tbl.style.textAlign = "left";
 
+// Create row
 var tr = tbl.insertRow();
-
-
 
 // Contact details
 var td = tr.insertCell(0);
@@ -32,15 +30,12 @@ var contactSkypetxt = document.createTextNode("Skype: " + steven_jackson.skype);
 contactSkype.appendChild(contactSkypetxt)
 
 
-
-
-
-
-
+// Append elements to td
 td.appendChild(contactEmail);
 td.appendChild(contactPhone);
 td.appendChild(contactSkype);
 
+// td styling
 td.style.padding = "0px";
 td.style.textAlign = "left";
 
@@ -48,14 +43,17 @@ td.style.textAlign = "left";
 // H1 Heading (Steven Jackson)
 var td = tr.insertCell(0);
 
+// Main Heading
 var heading = document.createElement("h1");
 var headingtxt = document.createTextNode("Steven Jackson");
 heading.appendChild(headingtxt)
 
+// Sub Heading
 var subHeading = document.createElement("h3");
 var subHeadingtxt = document.createTextNode('"Do it once, Do it right"');
 subHeading.appendChild(subHeadingtxt)
 
+// Append heading and subheading to td
 td.appendChild(heading);
 td.appendChild(subHeadingtxt);  
 td.style.padding = "5px 20px";
@@ -63,7 +61,6 @@ td.style.textAlign = "left";
 
 // Profile Image
 var td = tr.insertCell(0);
-
 var profileImage = document.createElement("img");
 profileImage.src = "img/steven-jackson.jpg";
 profileImage.width = 200;
