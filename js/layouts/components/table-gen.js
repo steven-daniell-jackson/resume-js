@@ -3,7 +3,7 @@
 function buildTable(e) {
 
 // Debug
-console.log(e);
+console.log(e.option.length);
 
 // Get targetted element
 var element = document.getElementById('skills-matrix-table');
@@ -15,8 +15,9 @@ tbl.style.border = '1px solid black';
 tbl.style.textAlign = "left";
 
 // TR Row loop (Row amount)
-for(var i = 0; i < 7; i++){
+for(var i = 0; i < e.option.length + 1; i++){
 
+console.log(1);
   var tr = tbl.insertRow();
 
         // TD Loop (TD amount)
@@ -26,6 +27,13 @@ for(var i = 0; i < 7; i++){
 // Table TD's
 if (i > 0) {
 
+var td = tr.insertCell(0);
+  td.appendChild(document.createTextNode(e.skill_level[i-1]));
+  td.style.border = '1px solid black';   
+  td.style.padding = "5px 20px";
+  td.style.textAlign = "center";
+
+
   var td = tr.insertCell(0);
   td.appendChild(document.createTextNode(e.proficiency[i-1] + " Months"));
   td.style.border = '1px solid black';   
@@ -34,7 +42,7 @@ if (i > 0) {
 
 
   var td = tr.insertCell(0);
-  td.appendChild(document.createTextNode(e.skill[i-1]+ ":"));
+  td.appendChild(document.createTextNode(e.option[i-1]+ ":"));
   td.style.border = '1px solid black';
   td.style.padding = "5px 20px";
   td.style.fontWeight  = "700";
@@ -42,20 +50,28 @@ if (i > 0) {
 // Table Heading
 }else {
 
-
-  var td_heading = tr.insertCell(0);
-  td_heading.appendChild(document.createTextNode("Language"));
+    var td_heading = tr.insertCell(0);
+  td_heading.appendChild(document.createTextNode("Skill level"));
   td_heading.style.border = '1px solid black';
   td_heading.style.padding = "10px 20px";
   td_heading.style.fontWeight  = "700";
   td_heading.style.textAlign = "center";
 
-  var td_heading = tr.insertCell(0);
+var td_heading = tr.insertCell(0);
   td_heading.appendChild(document.createTextNode("Duration"));
   td_heading.style.border = '1px solid black';   
   td_heading.style.padding = "10px 20px";
   td_heading.style.fontWeight  = "700";
   td_heading.style.textAlign = "center";
+
+  var td_heading = tr.insertCell(0);
+  td_heading.appendChild(document.createTextNode(e.heading));
+  td_heading.style.border = '1px solid black';
+  td_heading.style.padding = "10px 20px";
+  td_heading.style.fontWeight  = "700";
+  td_heading.style.textAlign = "center";
+
+  
 
 }
 
@@ -68,19 +84,7 @@ if (i > 0) {
   }
 
 
-  function populateTable(){
-
-    // Build table function
-    table = buildTable(skillsMatrix);
-
-    console.log(table);
-
-
-  }
-
-
-  populateTable();
-
+  
 
 
 

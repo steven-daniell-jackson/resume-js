@@ -1,12 +1,12 @@
 // Includes function
 
 function setupComponents(){
+document.write('<script type="text/javascript" src="js/layouts/components/table-gen.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/about-me.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/experience.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/skills-matrix.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/employment.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/profile-links.js"></script>');
-document.write('<script type="text/javascript" src="js/layouts/components/table-gen.js"></script>');
 
 }
 

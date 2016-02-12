@@ -76,10 +76,14 @@ console.log(about_me);
  Skills Matrix obj
  *********************************************/
 
- var skillsMatrix =  {
+ var skillsMatrix = function(heading, option, skill_level, proficiency){
 
- 	heading: "Test",
- 	skill: ['HTML','HTML2','HTML3','HTML4','HTML5','HTML6','','','','','','','','','','','','','',''],
- 	proficiency: ['4','5','6','2','1','2','','','','','','','','','','','','','','']
+ 	this.heading = heading,
+ 	this.option = option,
+ 	this.skill_level = skill_level,
+ 	this.proficiency = proficiency
 
  };
+
+
+var languages = new skillsMatrix ('Languages', ['HTML','CSS','JS','PHP','SQL'], ['4','4','3','3','2'], ['12','12','7','7','3']);

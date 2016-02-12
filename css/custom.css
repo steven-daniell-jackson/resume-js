@@ -47,10 +47,11 @@ footer{background-color: #191919; color:#fff;}
 /*Custom styles*/
 a#more-about-me-trigger {color:#fff;}
 a#less-about-me-trigger {color:#fff;}
+a.skills-matrix-btn {padding: 10px 20px; border: 1px solid;}
 
 #about-me-table {margin:0px;width: 100%; background-color: #fff;background-color: #191919; color: #fff; padding: 20px 0px;}
 #more-about-me-table {margin:0px;width: 100%; background-color: #fff;background-color: #292929; color: #fff; padding: 20px 0px;display: none;}
-
+section#skills-matrix-table {background-color: #fff;}
 
 
 /*Media Queries*/
