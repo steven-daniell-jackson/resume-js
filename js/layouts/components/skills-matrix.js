@@ -1,9 +1,15 @@
-// Build Table function from table-gen.js using the skillsMatrix obj
+/*********************************************
+Build Table function from table-gen.js 
+using the skillsMatrix obj instance (languages)
+ *********************************************/
 buildSkillMatricHeader();
 buildTable(languages);
 buildSkillMatrixOptions();
 
 
+/*********************************************
+ Build Skill Matrix Buttons
+ *********************************************/
 function buildSkillMatrixOptions(){
 
 // Get targetted element
@@ -17,6 +23,7 @@ tbl.style.textAlign = "left";
 // Create row
 var tr = tbl.insertRow();
 
+// Create button
 var td = tr.insertCell(0);
 var a = document.createElement("a");
 var txt = document.createTextNode("Other");
@@ -27,6 +34,7 @@ td.width = "15%";
 td.style.textAlign = "center";
 td.appendChild(a);
 
+// Create button
 var td = tr.insertCell(0);
 var a = document.createElement("a");
 var txt = document.createTextNode("I.T. Related");
@@ -37,8 +45,7 @@ td.width = "20%";
 td.style.textAlign = "center";
 td.appendChild(a);
 
-
-
+// Create button
 var td = tr.insertCell(0);
 var a = document.createElement("a");
 var txt = document.createTextNode("Platforms/CMS");
@@ -49,6 +56,7 @@ td.width = "20%";
 td.style.textAlign = "center";
 td.appendChild(a);
 
+// Create button
 var td = tr.insertCell(0);
 var a = document.createElement("a");
 var txt = document.createTextNode("Frameworks");
@@ -59,7 +67,7 @@ td.width = "20%";
 td.style.textAlign = "center";
 td.appendChild(a);
 
-
+// Create button
 var td = tr.insertCell(0);
 var a = document.createElement("a");
 var txt = document.createTextNode("Languages");
@@ -70,13 +78,16 @@ td.width = "20%";
 td.style.textAlign = "center";
 td.appendChild(a);
 
-
 td.height = "100px";
 // Write to Element
 element.appendChild(tbl);
 
 
 }
+
+/*********************************************
+ Build Skills Matrix Header
+ *********************************************/
 
 function buildSkillMatricHeader(e){
 
@@ -102,11 +113,9 @@ td.appendChild(h4);
 td.style.textAlign = "center";
 td.colSpan = 2;
 
-
 // Create row
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
-
 
 // Build Ordered List heading
 var h4 = document.createElement("h4");
@@ -116,9 +125,7 @@ h4.style.fontSize = "16px";
 h4.appendChild(txt)
 td.appendChild(h4)
 
-
 // Build Ordered List
-
 var ol = document.createElement("ol");
 var li = document.createElement("li");
 
@@ -138,7 +145,6 @@ var li = document.createElement("li");
 li.appendChild(document.createTextNode("Well versed"));
 ol.appendChild(li)
 
-
 td.appendChild(ol);
 td.style.textAlign = "left";
 
@@ -148,16 +154,23 @@ td.style.textAlign = "left";
 element.appendChild(tbl);
 
 
-}
+} //End function
 
-// Rebuild Skills Matrix
+
+/*********************************************
+ Rebuild Skills Matrix
+ *********************************************/
 
 function redrawSkillsMatrix(e) {
 
+// Remove current Skills Matrix and Buttons Table 
 	var element = document.querySelectorAll('#skills-matrix-table table');
 	element[1].remove(element);
 	element[2].remove(element);
 
+// Redraw Skills Matrix table based on the Buttons ID
 buildTable(e);
+
+// Rebuild buttons
 buildSkillMatrixOptions();
-}
+} //End function

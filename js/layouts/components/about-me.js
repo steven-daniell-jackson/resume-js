@@ -113,23 +113,18 @@ var p = document.createElement("p");
 var txt = document.createTextNode(about_me.objective);
 p.appendChild(txt)
 
-
-
 // Append elements to td
 td.appendChild(h4);
 td.appendChild(p);
 
-
 // td styling
 td.style.textAlign = "left";
 td.style.verticalAlign = "top";
-td.style.padding = "0px 0px 0px 5%";
-
+td.style.padding = "0px 15% 0px 5%";
 
 // Create row
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
-
 
 // a Trigger
 var a = document.createElement("a");
@@ -150,7 +145,7 @@ td.style.textAlign = "center";
 
 // Write to Element
 element.appendChild(tbl);
-}
+} //End function
 
 /*********************************************
  Build More About Me function
@@ -162,13 +157,10 @@ function buildMoreAboutMe(){
 // Get targetted element
 var element = document.getElementById('more-about-me-table');
 
-
 // Create header table
 tbl  = document.createElement('table');
 tbl.style.width  = '100%';
 tbl.style.textAlign = "left";
-
-
 
 // Create row
 var tr = tbl.insertRow();
@@ -195,9 +187,6 @@ Education
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
 
-var td = tr.insertCell(0);
-
-
 // Education Heading
 var h4 = document.createElement("h4");
 h4.style.fontSize = "32px";
@@ -206,7 +195,7 @@ h4.appendChild(txt)
 td.appendChild(h4);
 
 // Debug
-console.log(varistyCollege);
+// console.log(varistyCollege);
 
 // Varsity college name
 var p = document.createElement("p");
@@ -264,8 +253,6 @@ var txt = document.createTextNode(northlinkCollege.year);
 p.appendChild(txt)
 td.appendChild(p);
 
-
-
 // td styling
 td.style.textAlign = "left";
 td.width = "33%";
@@ -279,7 +266,6 @@ Traits
 
  *********************************************/
 var td = tr.insertCell(0);
-
 
 // Traits Heading
 var h4 = document.createElement("h4");
@@ -296,7 +282,6 @@ p.appendChild(traits)
 td.appendChild(p);
 };
 
-
 // td styling
 td.style.textAlign = "left";
 td.style.verticalAlign = "top";
@@ -310,7 +295,6 @@ Hobbies
 
  *********************************************/
 var td = tr.insertCell(0);
-
 
 // Hobbies Heading
 var h4 = document.createElement("h4");
@@ -327,17 +311,14 @@ p.appendChild(hobby)
 td.appendChild(p);
 };
 
-
 // td styling
 td.style.textAlign = "left";
 td.style.verticalAlign = "top";
 td.style.padding = "0px 0px 0px 5%";
 
-
 // Create row
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
-
 
 // a Trigger 
 var a = document.createElement("a");
@@ -358,5 +339,5 @@ td.style.textAlign = "center";
 
 // Write to Element
 element.appendChild(tbl);
-}
+} //End function
 

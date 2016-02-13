@@ -1,25 +1,21 @@
-// Includes function
+/*********************************************
+ Includes function
+ *********************************************/
 
 function setupComponents(){
 document.write('<script type="text/javascript" src="js/layouts/components/table-gen.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/about-me.js"></script>');
-document.write('<script type="text/javascript" src="js/layouts/components/experience.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/skills-matrix.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/employment.js"></script>');
 document.write('<script type="text/javascript" src="js/layouts/components/profile-links.js"></script>');
 
 }
 
-
-
 /*********************************************
  Call build functions
  *********************************************/
-
  buildFooter();
  buildHeader();
-
-
 
 /*********************************************
  Build Header
@@ -101,7 +97,7 @@ td.style.textAlign = "center";
 
 // Write to Element
 element.appendChild(tbl);
-}
+} //End function
 
 /*********************************************
  Build Footer
@@ -138,7 +134,6 @@ td.appendChild(ReferencesHeading);
 // Append elements to td
 
 // Dawie
-
 // Name and Last name
 var p = document.createElement("p");
 var referenceDetails = document.createTextNode(dawie.firstname + " " + dawie.lastname);
@@ -161,15 +156,13 @@ p.appendChild(referenceDetails);
 td.appendChild(p);
 
 // Debug
-console.log(dawie);
+// console.log(dawie);
 
 // Single line break
 var br = document.createElement("br");
 td.appendChild(br);
 
-
 // Ashraf
-
 // Name and Last name
 var p = document.createElement("p");
 var referenceDetails = document.createTextNode(ashraf.firstname + " " + ashraf.lastname);
@@ -196,9 +189,7 @@ var br = document.createElement("br");
 td.appendChild(br);
 
 
-
 // Ryan
-
 // Name and Last name
 var p = document.createElement("p");
 var referenceDetails = document.createTextNode(ryan.firstname + " " + ryan.lastname);
@@ -219,8 +210,6 @@ var referenceDetails = document.createTextNode(ryan.contact_number);
 p.appendChild(referenceDetails);
 
 td.appendChild(p);
-
-
 
 // td styling
 td.style.padding = "0px";
@@ -257,7 +246,6 @@ var contactSkype = document.createElement("p");
 var contactSkypetxt = document.createTextNode("Skype: " + steven_jackson.skype);
 contactSkype.appendChild(contactSkypetxt)
 
-
 // Append elements to td
 td.appendChild(contactDetailsHeading);
 td.appendChild(contactEmail);
@@ -284,11 +272,9 @@ var hr = document.createElement("hr");
 td.appendChild(hr);
 td.colSpan = 2;
 
-
 // Create row
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
-
 
 // Create row
 var tr = tbl.insertRow();
@@ -298,8 +284,6 @@ var p = document.createElement("p");
 var note = document.createTextNode("Note: Github hosting only allows HTML, CSS and JS.");
 p.appendChild(note);
 td.appendChild(p);
-
-
 
 var p = document.createElement("p");
 var note = document.createTextNode("Written by Steven Jackson - 2016");
@@ -312,7 +296,6 @@ td.style.textAlign = "center";
 td.colSpan = 2;
 
 
-
 // Write to Element
 element.appendChild(tbl);
-}
+} //End function

@@ -33,8 +33,9 @@ Same naming convention as Bootstrap, since I am comfortable using it.
 	float: right;
 }
 
-
-/*Base styles*/
+/***************************
+ Base styles
+***************************/
 body{background-color: #000;}
 h1,h2,h3,h4,h5 {margin:0px;}
 h4 {padding: 20px 0px;}
@@ -44,7 +45,10 @@ p {margin:5px 0px;}
 header {background-color: #fff; padding: 20px 0px;}
 footer{background-color: #191919; color:#fff;}
 
-/*Custom styles*/
+
+/***************************
+ Custom styles
+***************************/
 #about-me-table {margin:0px;width: 100%; background-color: #fff;background-color: #191919; color: #fff; padding: 20px 0px;}
 #more-about-me-table {margin:0px;width: 100%; background-color: #fff;background-color: #292929; color: #fff; padding: 20px 0px;display: none;}
 section#skills-matrix-table {background-color: #fff;}
@@ -53,27 +57,27 @@ a.profile-btns {color:#fff; padding: 20px 0px;}
 #profile-links-table td {border: 1px solid #fff;}
 #profile-links-table .profile-links-heading{border: 0px;}
 #profile-links-table .notification{border: 0px;}
-/*CSS Transitions*/
+#employment-history-table {background-color: #fff; color: #000;}
 
-
-
-
+/***************************
+ CSS Transitions
+***************************/
 a#more-about-me-trigger {
 	font-weight: 700;
 	color:#fff;
--webkit-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 
 }
+
 a#more-about-me-trigger:hover {
 background-color: #fff;
 	color:#000;
 	border-color: #000;
-
--webkit-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
@@ -84,7 +88,7 @@ background-color: #fff;
 a#less-about-me-trigger {
 	font-weight: 700;
 	color:#fff;
--webkit-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
@@ -95,13 +99,11 @@ a#less-about-me-trigger:hover {
 background-color: #fff;
 	color:#000;
 	border-color: #000;
-
--webkit-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 }
-
 
 a.skills-matrix-btn {
 	color: #000;
@@ -113,6 +115,7 @@ a.skills-matrix-btn {
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 }
+
 a.skills-matrix-btn:hover {
 	padding: 10px 20px; 
 	border: 1px solid; 

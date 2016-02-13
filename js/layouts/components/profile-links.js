@@ -1,3 +1,16 @@
+/*********************************************
+ Build Profile Links
+ *********************************************/
+
+profileLinkButtons ()
+profileLinksNotification();
+
+
+/*********************************************
+ profileLinkButtons function
+ *********************************************/
+function profileLinkButtons (){
+
 // Get targetted element
 var element = document.getElementById('profile-links-table');
 
@@ -6,15 +19,12 @@ tbl  = document.createElement('table');
 tbl.style.width  = '100%';
 tbl.style.textAlign = "left";
 
-// Create row
-var tr = tbl.insertRow();
-
 
 // Create row
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
 
-// About Me Heading
+// Profile Links Heading
 var h4 = document.createElement("h4");
 h4.style.fontSize = "42px";
 var txt = document.createTextNode("Profile Links");
@@ -31,7 +41,7 @@ var tr = tbl.insertRow();
 var td = tr.insertCell(0);
 
 
-
+// Build button
 var td = tr.insertCell(0);
 var i = document.createElement("i");
 var br = document.createElement("br");
@@ -50,7 +60,7 @@ td.style.textAlign = "center";
 td.appendChild(a);
 
 
-
+// Build button
 var td = tr.insertCell(0);
 var i = document.createElement("i");
 var x = document.createElement("i");
@@ -73,7 +83,7 @@ td.style.textAlign = "center";
 td.appendChild(a);
 
 
-
+// Build button
 var td = tr.insertCell(0);
 var i = document.createElement("i");
 var br = document.createElement("br");
@@ -92,7 +102,7 @@ td.style.textAlign = "center";
 td.appendChild(a);
 
 
-
+// Build button
 var td = tr.insertCell(0);
 var i = document.createElement("i");
 var br = document.createElement("br");
@@ -109,18 +119,22 @@ a.appendChild(txt);
 td.width = "25%";
 td.style.textAlign = "center";
 td.appendChild(a);
-
-
-
-
 td.height = "100px";
+
 // Write to Element
 element.appendChild(tbl);
 
-profileLinksNotification();
+} //End function
 
 
 
+
+/*********************************************
+ Builds Notification table
+ Parameter: elementsID
+
+ Accepts the selected elements ID
+ *********************************************/
 
 function profileLinksNotification(elementID){
 
@@ -132,102 +146,106 @@ tbl  = document.createElement('table');
 tbl.style.width  = '100%';
 tbl.style.textAlign = "left";
 
-// Create row
-var tr = tbl.insertRow();
-
 
 // Create row
 var tr = tbl.insertRow();
 var td = tr.insertCell(0);
 
-
-// Create row
-var tr = tbl.insertRow();
-var td = tr.insertCell(0);
-
+// Create single line break
 var br = document.createElement("br");
 
-
-
+// Build notification based on element's ID
 switch (elementID) {
 
-	case 'linkedin':
-	var a = document.createElement("a");
-	var txt = document.createTextNode("My");
-	var txt2 = document.createTextNode(" LinkedIn ");
-	var txt3 = document.createTextNode("Profile");
-	a.target = "_blank";
-	a.href = "https://za.linkedin.com/pub/steven-jackson/b3/978/199";
-	a.appendChild(txt2);
-	td.width = "100%";
-	td.className = "notification";
-	td.style.textAlign = "center";
-	td.appendChild(txt);
-	td.appendChild(a);
-	td.appendChild(txt3);
-	break;
-	case 'github':
-	var a = document.createElement("a");
-	var txt = document.createTextNode("My");
-	var txt2 = document.createTextNode(" Github ");
-	var txt3 = document.createTextNode("Profile");
-	a.target = "_blank";
-	a.href = "https://github.com/steven-daniell-jackson/";
-	a.appendChild(txt2);
-	td.width = "100%";
-	td.className = "notification";
-	td.style.textAlign = "center";
-	td.appendChild(txt);
-	td.appendChild(a);
-	td.appendChild(txt3);
-	break;
+// Create notification message
+case 'linkedin':
+var a = document.createElement("a");
+var txt = document.createTextNode("My");
+var txt2 = document.createTextNode(" LinkedIn ");
+var txt3 = document.createTextNode("Profile");
 
-	case 'portfolio':
-	var br2 = document.createElement("br");
-	var a = document.createElement("a");
-	var a2 = document.createElement("a");
-	var txt = document.createTextNode("Due to the amount of Screenshots. This has been segmented");
-	var txt2 = document.createTextNode("View Screenshot Portfolio");
-	var txt3 = document.createTextNode("View Screenshot Portfolio Angular App - Inprogress");
-	a.target = "_blank";
-	a.href = "http://steven-daniell-jackson.github.io/screenshot_portfolio/";
+a.target = "_blank";
+a.href = "https://za.linkedin.com/pub/steven-jackson/b3/978/199";
+a.appendChild(txt2);
 
-	a2.target = "_blank";
-	a2.href = "http://steven-daniell-jackson.github.io/screenshot_portfolio_app/#/";
+td.appendChild(txt);
+td.appendChild(a);
+td.appendChild(txt3);
 
-	a.appendChild(txt2);
-	a2.appendChild(txt3);
+td.width = "100%";
+td.className = "notification";
+td.style.textAlign = "center";
 
+break;
+
+// Create notification message
+case 'github':
+var a = document.createElement("a");
+var txt = document.createTextNode("My");
+var txt2 = document.createTextNode(" Github ");
+var txt3 = document.createTextNode("Profile");
+
+a.target = "_blank";
+a.href = "https://github.com/steven-daniell-jackson/";
+
+a.appendChild(txt2);
+td.appendChild(txt);
+td.appendChild(a);
+td.appendChild(txt3);
+
+td.width = "100%";
+td.className = "notification";
+td.style.textAlign = "center";
+
+break;
+
+// Create notification message
+case 'portfolio':
+var br2 = document.createElement("br");
+var a = document.createElement("a");
+var a2 = document.createElement("a");
+var txt = document.createTextNode("Due to the amount of Screenshots. This has been segmented");
+var txt2 = document.createTextNode("View Screenshot Portfolio");
+var txt3 = document.createTextNode("View Screenshot Portfolio Angular App - Inprogress");
+
+a.target = "_blank";
+a.href = "http://steven-daniell-jackson.github.io/screenshot_portfolio/";
+a2.target = "_blank";
+a2.href = "http://steven-daniell-jackson.github.io/screenshot_portfolio_app/#/";
+a.appendChild(txt2);
+a2.appendChild(txt3);
 
 td.appendChild(br);
-	td.appendChild(txt);
-	td.appendChild(br);
-	td.appendChild(a);
+td.appendChild(txt);
+td.appendChild(br);
+td.appendChild(a);
 td.appendChild(br2);
-	td.appendChild(a2);
+td.appendChild(a2);
 
-	td.width = "100%";
-	td.className = "notification";
-	td.style.textAlign = "center";
-	break;
+td.width = "100%";
+td.className = "notification";
+td.style.textAlign = "center";
+break;
 
-	case 'google':
-	
-
-
+// Create notification message
+case 'google':
 var a = document.createElement("a");
-	var txt = document.createTextNode("Google Drive Document containing Work Done, Portfolio of Websites worked on, Skills Matrix and Responsibilies. ");
-	var txt2 = document.createTextNode("View Google Drive Document");
-	a.target = "_blank";
-	a.href = "https://docs.google.com/spreadsheets/d/1s7Or_0nZ1YYS3KibGAVgGdPnjmqB6iYWQPnXvEVpUmw/edit?usp=sharing";
-	a.appendChild(txt2);
-	td.width = "100%";
-	td.className = "notification";
-	td.style.textAlign = "center";
-	td.appendChild(txt);
-	td.appendChild(br);
-	td.appendChild(a);
-	break;
+var txt = document.createTextNode("Google Drive Document containing Work Done, Portfolio of Websites worked on, Skills Matrix and Responsibilies. ");
+var txt2 = document.createTextNode("View Google Drive Document");
+
+a.target = "_blank";
+a.href = "https://docs.google.com/spreadsheets/d/1s7Or_0nZ1YYS3KibGAVgGdPnjmqB6iYWQPnXvEVpUmw/edit?usp=sharing";
+a.appendChild(txt2);
+
+td.appendChild(txt);
+td.appendChild(br);
+td.appendChild(a);
+
+td.width = "100%";
+td.className = "notification";
+td.style.textAlign = "center";
+
+break;
 
 default: 
 td.className = "notification";
@@ -243,11 +261,15 @@ element.appendChild(tbl);
 
 }
 
+// Remove generated table for a new instance
 function clearNotification(e) {
 
 	var element = document.querySelector('.notification');
-	console.log(element);
+	
+	// Debug
+	// console.log(element);
+
 	element.parentNode.parentNode.parentNode.remove();
 
 
-}
+} //End function
