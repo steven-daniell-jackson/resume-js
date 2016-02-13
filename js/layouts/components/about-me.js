@@ -137,7 +137,7 @@ a.id = "more-about-me-trigger";
 a.style.border = '1px solid white';
 a.style.padding = "10px 20px";
 td.height = "100px";
-a.href = "#";
+a.href = "#about-me-table";
 var txt = document.createTextNode("More about me");
 a.appendChild(txt)
 
@@ -345,7 +345,7 @@ a.id = "less-about-me-trigger";
 a.style.border = '1px solid white';
 a.style.padding = "10px 20px";
 td.height = "100px";
-a.href = "#";
+a.href = "#about-me-table";
 var aboutMetxt = document.createTextNode("Less about me");
 a.appendChild(aboutMetxt)
 

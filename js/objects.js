@@ -85,5 +85,47 @@ console.log(about_me);
 
  };
 
+// Skills Matrix Instances
+var languages = new skillsMatrix (
+	'Languages', 
+	['HTML','CSS','JS','PHP','SQL'], 
+	['4','4','3','3','2'], 
+	['12','12','7','7','3']
 
-var languages = new skillsMatrix ('Languages', ['HTML','CSS','JS','PHP','SQL'], ['4','4','3','3','2'], ['12','12','7','7','3']);
+	);
+
+
+var platforms = new skillsMatrix (
+	'Platforms/CMS', 
+	['Wordpress','CS Cart','Magento', 'Expression Engine', 'Joomla', 'Concrete CMS', 'Custom CMS'], 
+	['3','2','1','1','1','1','1'], 
+	['12','8','2','2','2','2','2']
+
+	);
+
+var frameworks = new skillsMatrix (
+	'Frameworks', 
+	['Bootstrap','Foundation', 'jQuery','Angular'], 
+	['4','2','3','1'], 
+	['12','4','5','2']
+
+	);
+
+
+var other = new skillsMatrix (
+	'Other', 
+	['Sublime Text 3','Windows 10','Git - Command Line', 'Chrome', 'Filezilla'], 
+	['4','4','3','4','4'],
+	['12','8','7','12','12']
+
+	);
+
+
+
+var it_related = new skillsMatrix (
+	'IT Related', 
+	['Computer Repairs','Troubleshooting','Hosting', 'SEO (redirects)', 'Networking'], 
+	['4','3','3','3','3'], 
+	['24','24','12','12','12']
+
+	);

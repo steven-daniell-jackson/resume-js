@@ -1,7 +1,9 @@
 // Build Table function from table-gen.js using the skillsMatrix obj
 buildSkillMatricHeader();
 buildTable(languages);
-buildSkillMatrixOptions()
+buildSkillMatrixOptions();
+
+
 function buildSkillMatrixOptions(){
 
 // Get targetted element
@@ -15,26 +17,26 @@ tbl.style.textAlign = "left";
 // Create row
 var tr = tbl.insertRow();
 
-
 var td = tr.insertCell(0);
 var a = document.createElement("a");
-var txt = document.createTextNode("IT");
-a.id = "it";
+var txt = document.createTextNode("Other");
+a.id = "other";
 a.className = "skills-matrix-btn";
 a.appendChild(txt);
-td.width = "10%";
+td.width = "15%";
 td.style.textAlign = "center";
 td.appendChild(a);
 
 var td = tr.insertCell(0);
 var a = document.createElement("a");
-var txt = document.createTextNode("other");
-a.id = "other";
+var txt = document.createTextNode("I.T. Related");
+a.id = "it_related";
 a.className = "skills-matrix-btn";
 a.appendChild(txt);
 td.width = "20%";
 td.style.textAlign = "center";
 td.appendChild(a);
+
 
 
 var td = tr.insertCell(0);
@@ -146,4 +148,16 @@ td.style.textAlign = "left";
 element.appendChild(tbl);
 
 
+}
+
+// Rebuild Skills Matrix
+
+function redrawSkillsMatrix(e) {
+
+	var element = document.querySelectorAll('#skills-matrix-table table');
+	element[1].remove(element);
+	element[2].remove(element);
+
+buildTable(e);
+buildSkillMatrixOptions();
 }

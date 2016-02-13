@@ -3,7 +3,7 @@
 function buildTable(e) {
 
 // Debug
-console.log(e.option.length);
+// console.log(e.option.length);
 
 // Get targetted element
 var element = document.getElementById('skills-matrix-table');
@@ -17,7 +17,7 @@ tbl.style.textAlign = "left";
 // TR Row loop (Row amount)
 for(var i = 0; i < e.option.length + 1; i++){
 
-console.log(1);
+
   var tr = tbl.insertRow();
 
         // TD Loop (TD amount)
