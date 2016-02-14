@@ -1,8 +1,6 @@
 // DOC ready
 jQuery(document).ready(function($) {
 
-
-
 /*********************************************
  About Me Event listeners
  *********************************************/
@@ -114,7 +112,7 @@ for (var i = skills_matrix_btn.length - 1; i >= 0; i--) {
 // Add event listener to #more-about-me-trigger
 document.querySelector("a#employment_development").addEventListener("click", function(){
 
-	redrawSkillsMatrix(roiDigitalDev);
+	redrawEmploymentDuties(roiDigitalDev);
 	// Debug
 	// console.log("triggered");
 });
@@ -122,7 +120,7 @@ document.querySelector("a#employment_development").addEventListener("click", fun
 // Add event listener to #less-about-me-trigger
 document.querySelector("a#employment_it_related").addEventListener("click", function(){
 
-	redrawSkillsMatrix(roiDigitalItRelated);
+	redrawEmploymentDuties(roiDigitalItRelated);
 
 	// Debug
 	// console.log("triggered");

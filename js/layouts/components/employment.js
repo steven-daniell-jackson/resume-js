@@ -134,7 +134,7 @@ var td = tr.insertCell(0);
 var a = document.createElement("a");
 var txt = document.createTextNode("I.T. Related Duties");
 a.id = "employment_it_related";
-a.className = "skills-matrix-btn";
+a.className = "employment-btn";
 a.href = "#employment-history-table";
 a.appendChild(txt);
 td.style.textAlign = "center";
@@ -145,7 +145,7 @@ var td = tr.insertCell(0);
 var a = document.createElement("a");
 var txt = document.createTextNode("Development Duties");
 a.id = "employment_development";
-a.className = "skills-matrix-btn";
+a.className = "employment-btn";
 a.href = "#employment-history-table";
 a.appendChild(txt);
 td.style.textAlign = "center";
@@ -161,7 +161,7 @@ element.appendChild(tbl);
 
 
 // Redraw duties Table
-function redrawSkillsMatrix(e) {
+function redrawEmploymentDuties(e) {
 
 // Remove current table if it exists, else draw the table
 var element = document.querySelectorAll('#employment-history-table table');
