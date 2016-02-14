@@ -51,13 +51,13 @@ footer{background-color: #191919; color:#fff;}
 ***************************/
 #about-me-table {margin:0px;width: 100%; background-color: #fff;background-color: #191919; color: #fff; padding: 20px 0px;}
 #more-about-me-table {margin:0px;width: 100%; background-color: #fff;background-color: #292929; color: #fff; padding: 20px 0px;display: none;}
-section#skills-matrix-table {background-color: #fff;}
-#profile-links-table {background-color: #191919; color:#fff;}
+section#skills-matrix-table {background-color: #fff; padding: 30px 0 50px 0;}
+#profile-links-table {background-color: #191919; color:#fff;padding: 30px 0 20px 0;}
 a.profile-btns {color:#fff; padding: 20px 0px;}
 #profile-links-table td {border: 1px solid #fff;}
 #profile-links-table .profile-links-heading{border: 0px;}
 #profile-links-table .notification{border: 0px;}
-#employment-history-table {background-color: #fff; color: #000;}
+#employment-history-table {background-color: #fff; color: #000; padding: 30px 0 50px 0;}
 
 /***************************
  CSS Transitions
@@ -131,4 +131,8 @@ a.skills-matrix-btn:hover {
 /*Media Queries*/
 @media (max-width: 1200px ) {
 	.container{ width: 100%;}
+
+
+	#employment-history-table table:nth-child(2){  width: 50% !important; }
+	#employment-history-table table:nth-child(3){  width: 100% !important; }
 }

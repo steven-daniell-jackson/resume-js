@@ -259,7 +259,7 @@ td.height = "100px";
 // Write to Element
 element.appendChild(tbl);
 
-}
+} //End function
 
 // Remove generated table for a new instance
 function clearNotification(e) {

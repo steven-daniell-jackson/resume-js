@@ -106,7 +106,28 @@ for (var i = skills_matrix_btn.length - 1; i >= 0; i--) {
 } //End function
 
 
+/*********************************************
+ Employment Event listeners
+ *********************************************/
 
+
+// Add event listener to #more-about-me-trigger
+document.querySelector("a#employment_development").addEventListener("click", function(){
+
+	redrawSkillsMatrix(roiDigitalDev);
+	// Debug
+	// console.log("triggered");
+});
+
+// Add event listener to #less-about-me-trigger
+document.querySelector("a#employment_it_related").addEventListener("click", function(){
+
+	redrawSkillsMatrix(roiDigitalItRelated);
+
+	// Debug
+	// console.log("triggered");
+
+});
 
 
 
