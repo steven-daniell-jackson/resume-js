@@ -87,7 +87,7 @@ td.style.verticalAlign = "top";
 // Profile Image
 var td = tr.insertCell(0);
 var profileImage = document.createElement("img");
-profileImage.src = "img/steven-jackson.jpg";
+profileImage.src = "http://steven-daniell-jackson.github.io/img/steven-jackson.jpg";
 profileImage.width = 200;
 
 td.appendChild(profileImage);
