@@ -73,10 +73,6 @@ var txt = document.createTextNode("Cape Town");
 p.appendChild(txt);
 p.appendChild(document.createElement("br"));
 
-var txt = document.createTextNode("Salary: R13,000");
-p.appendChild(txt);
-p.appendChild(document.createElement("br"));
-
 var txt = document.createTextNode("Duration: July 2012 till July 2015");
 p.appendChild(txt);
 p.appendChild(document.createElement("br"));
